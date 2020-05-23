@@ -974,104 +974,47 @@ audio {
 
 .bannar {
 	max-width: 100%;
-	-webkit-transform:translate(0px,-500px);
-	-moz-transform:translate(0px,-500px);
-	-o-transform:translate(0px,-500px);
-	-ms-transform:translate(0px,-500px);
-	transform:translate(0px,-500px);
+	-webkit-transform:translate(-100px,-700px);
+	-moz-transform:translate(-100px,-700px);
+	-o-transform:translate(-100px,-700px);
+	-ms-transform:translate(-100px,-700px);
+	transform:translate(-100px,-700px);
 
 }
 .bannar-come {
 	-webkit-animation: bannar_come linear 6s;
-	-webkit-transform:translate(0px,0px);
-	-moz-animation: bannar_come linear 6s;
-	-moz-transform:translate(0px,0px);
-	-o-animation: bannar_come linear 6s;
-	-o-transform:translate(0px,0px);
-	-ms-animation: bannar_come linear 6s;
-	-ms-transform:translate(0px,0px);
+	-webkit-transform:translate(0px,-65px);
 	animation: bannar_come linear 6s;
-	transform:translate(0px,0px);
+	transform:translate(0px,-65px);
 }
 @-webkit-keyframes bannar_come {
 	0%{
-		-webkit-transform:translate(0px,-1000px);
+		-webkit-transform:translate(-100px,-600px);
 	}
 	33%{
-		-webkit-transform:translate(0px,0px);
+		-webkit-transform:translate(-100px,0px);
 		-webkit-transform:rotate(10deg);
-		/*-webkit-transform:scale(1.5);*/
+		-webkit-transform:scale(1.5);
 	}
 	66% {
-		-webkit-transform:translate(0px,100px);
+		-webkit-transform:translate(-100px,100px);
 		-webkit-transform:rotate(-10deg);
 	}
 	100% {
-		-webkit-transform:translate(0px,0px);
+		-webkit-transform:translate(-100px,0px);
 	}
 }
-@-moz-keyframes bannar_come {
-	0%{
-		-moz-transform:translate(0px,-1000px);
-	}
-	33%{
-		-moz-transform:translate(0px,0px);
-		-moz-transform:rotate(10deg);
-		/*-webkit-transform:scale(1.5);*/
-	}
-	66% {
-		-moz-transform:translate(0px,100px);
-		-moz-transform:rotate(-10deg);
-	}
-	100% {
-		-moz-transform:translate(0px,0px);
-	}
-}
-@-o-keyframes bannar_come {
-	0%{
-		-o-transform:translate(0px,-1000px);
-	}
-	33%{
-		-o-transform:translate(0px,0px);
-		-o-transform:rotate(10deg);
-		/*-webkit-transform:scale(1.5);*/
-	}
-	66% {
-		-o-transform:translate(0px,100px);
-		-o-transform:rotate(-10deg);
-	}
-	100% {
-		-o-transform:translate(0px,0px);
-	}
-}
-@-ms-keyframes bannar_come {
-	0%{
-		-ms-transform:translate(0px,-1000px);
-	}
-	33%{
-		-ms-transform:translate(0px,0px);
-		-ms-transform:rotate(10deg);
-		/*-webkit-transform:scale(1.5);*/
-	}
-	66% {
-		-ms-transform:translate(0px,100px);
-		-ms-transform:rotate(-10deg);
-	}
-	100% {
-		-ms-transform:translate(0px,0px);
-	}
-}o
 @keyframes bannar_come {
 	0%{
-		transform:translate(0px,-1000px);
+		transform:translate(0px,-600px);
 	}
 	33%{
-		transform:translate(0px,0px);
+		transform:translate(0px, 0px);
 		transform:rotate(10deg);
 		/*-webkit-transform:scale(1.5);*/
 	}
 	66% {
-		transform:translate(0px,100px);
+		transform:translate(0px,165px);
 		transform:rotate(-10deg);
 	}
 	100% {
@@ -1264,8 +1207,8 @@ audio {
 	bottom: 0;
 	padding:10px 0px 10px 0px;
 }
-#play, #bannar_coming, #balloons_flying,#cake_fadein,#light_candle,#wish_message,#story {
-	display: none;
+#play, #bannar_coming, #balloons_flying,#cake_fadein,#light_candle,#wish_message,#story, #owl-demo {
+	display: none 
 }
 
 .cake-cover {
@@ -1278,9 +1221,9 @@ audio {
 }
 .message p {
 	font-family: 'Signika', sans-serif;
-	font-size: 30px;
+	font-size: 20px;
 	text-transform: uppercase;
-	color: #C4515C;
+	color: black;
 	text-shadow: 2px 2px 2px #FFF;
 	display: none;
 	font-weight: bold;
@@ -1306,6 +1249,37 @@ audio {
     }
 
 
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+
+
+  #owl-demo .item {
+	margin: 3px;
+	width: 150px;
+	height: 150px;
+	
+  }
+  .block
+  {
+	display: block ;
+  }
+  #owl-demo .item img {
+	display: block;
+	width: 100%;
+	height: auto;
+	-webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+	background-size: contain;
+	box-shadow: 0 0 15px 15px #f7b1d6;
+	border-radius: 7%;
+	
+  }
+  .owl-carousel .owl-wrapper-outer{
+	  opacity: 0.7 !important;
+  }
+  
 
     /*controlling tablet width*/
     /*@media only screen and (max-width: 720px){

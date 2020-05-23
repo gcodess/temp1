@@ -17,6 +17,7 @@ $('document').ready(function(){
 		});
 
 	$('#turn_on').click(function(){
+		$('#owl-demo').addClass('block');
 		$('#bulb_yellow').addClass('bulb-glow-yellow');
 		$('#bulb_red').addClass('bulb-glow-red');
 		$('#bulb_blue').addClass('bulb-glow-blue');
@@ -30,9 +31,13 @@ $('document').ready(function(){
 		$('#bulb_pink2').addClass('bulb-glow-pink rotate');
 		$('#bulb_orange2').addClass('bulb-glow-orange rotate');
 		$('body').addClass('peach');
-		$(this).fadeOut('slow').delay(5000).promise().done(function(){
+		$(this).fadeOut('slow').delay(3000).promise().done(function(){
 			$('#play').fadeIn('slow');
 		});
+		$(this).fadeOut('slow').delay(1000).promise().done(function(){
+			$('#owl-demo').addClass('block');
+		});
+		
 	});
 	$('#play').click(function(){
 		var audio = $('.song')[0];
@@ -51,14 +56,19 @@ $('document').ready(function(){
 		$('#bulb_orange2').addClass('bulb-glow-orange-after rotate');
 		$('body').css('backgroud-color','#FFF');
 		$('body').addClass('peach-after');
-		$(this).fadeOut('slow').delay(6000).promise().done(function(){
+		$(this).fadeOut('slow').delay(3000).promise().done(function(){
 			$('#bannar_coming').fadeIn('slow');
 		});
 	});
+	$('#bulb_red2').click(function(){
+		var audio = $('.song')[0];
+		audio.pause();
+	});
+	
 
 	$('#bannar_coming').click(function(){
 		$('.bannar').addClass('bannar-come');
-		$(this).fadeOut('slow').delay(6000).promise().done(function(){
+		$(this).fadeOut('slow').delay(4000).promise().done(function(){
 			$('#balloons_flying').fadeIn('slow');
 		});
 	});
@@ -135,7 +145,7 @@ $('document').ready(function(){
 			$('#wish_message').fadeIn('slow');
 		});
 	});	
-
+	
 	$('#cake_fadein').click(function(){
 		$('.cake').fadeIn('slow');
 		$(this).fadeOut('slow').delay(3000).promise().done(function(){
@@ -204,6 +214,15 @@ $('document').ready(function(){
 		
 		msgLoop(0);
 		
+	});
+	$("#owl-demo").owlCarousel({
+     
+		autoPlay: 1000, //Set AutoPlay to 3 seconds
+   
+		items : 4,
+		itemsDesktop : [1199,3],
+		itemsDesktopSmall : [979,3]
+   
 	});
 });
 
